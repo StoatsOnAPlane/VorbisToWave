@@ -1,5 +1,11 @@
 # VorbisToWave
 
+This project is just a subset of NAudio and NVorbis, made to run as a Portable Class Library for Monogame
+
+https://github.com/AdamsLair/nvorbis/tree/master/NVorbis/Ogg
+https://github.com/naudio/NAudio
+
+
 Usage example:
 
 ```
