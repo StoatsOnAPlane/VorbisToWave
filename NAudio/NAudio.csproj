@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NAudio</RootNamespace>
+    <AssemblyName>NAudio</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile44</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dmo\AudioMediaSubtypes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleProviders\SampleToWaveProvider16.cs" />
+    <Compile Include="Utils\BufferHelpers.cs" />
+    <Compile Include="Utils\IgnoreDisposeStream.cs" />
+    <Compile Include="Utils\MarshalHelpers.cs" />
+    <Compile Include="Vorbis\BufferedReadStream.cs" />
+    <Compile Include="Vorbis\DataPacket.cs" />
+    <Compile Include="Vorbis\Huffman.cs" />
+    <Compile Include="Vorbis\IContainerReader.cs" />
+    <Compile Include="Vorbis\IPacketProvider.cs" />
+    <Compile Include="Vorbis\IVorbisStreamStatus.cs" />
+    <Compile Include="Vorbis\Mdct.cs" />
+    <Compile Include="Vorbis\NewStreamEventArgs.cs" />
+    <Compile Include="Vorbis\Ogg\OggContainerReader.cs" />
+    <Compile Include="Vorbis\Ogg\OggCrc.cs" />
+    <Compile Include="Vorbis\Ogg\OggPacket.cs" />
+    <Compile Include="Vorbis\Ogg\OggPacketReader.cs" />
+    <Compile Include="Vorbis\Ogg\OggPageFlags.cs" />
+    <Compile Include="Vorbis\RingBuffer.cs" />
+    <Compile Include="Vorbis\StreamReadBuffer.cs" />
+    <Compile Include="Vorbis\Utils.cs" />
+    <Compile Include="Vorbis\VorbisCodebook.cs" />
+    <Compile Include="Vorbis\VorbisFloor.cs" />
+    <Compile Include="Vorbis\VorbisMapping.cs" />
+    <Compile Include="Vorbis\VorbisMode.cs" />
+    <Compile Include="Vorbis\VorbisReader.cs" />
+    <Compile Include="Vorbis\VorbisResidue.cs" />
+    <Compile Include="Vorbis\VorbisStreamDecoder.cs" />
+    <Compile Include="Vorbis\VorbisTime.cs" />
+    <Compile Include="Vorbis\VorbisToWave.cs" />
+    <Compile Include="Vorbis\VorbisWaveReader.cs" />
+    <Compile Include="Wave\AdpcmWaveFormat.cs" />
+    <Compile Include="Wave\Gsm610WaveFormat.cs" />
+    <Compile Include="Wave\ISampleProvider.cs" />
+    <Compile Include="Wave\IWaveBuffer.cs" />
+    <Compile Include="Wave\IWaveProvider.cs" />
+    <Compile Include="Wave\WaveBuffer.cs" />
+    <Compile Include="Wave\WaveFileWriter.cs" />
+    <Compile Include="Wave\WaveFormat.cs" />
+    <Compile Include="Wave\WaveFormatEncoding.cs" />
+    <Compile Include="Wave\WaveFormatExtensible.cs" />
+    <Compile Include="Wave\WaveFormatExtraData.cs" />
+    <Compile Include="Wave\WaveStream.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>

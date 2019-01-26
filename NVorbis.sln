@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAudio", "NAudio\NAudio.csproj", "{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{CCB315F4-E72E-4055-A443-5E2A575ED15D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug - Unsafe MDCT|Any CPU = Debug - Unsafe MDCT|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release - Unsafe MDCT|Any CPU = Release - Unsafe MDCT|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}.Debug - Unsafe MDCT|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}.Debug - Unsafe MDCT|Any CPU.Build.0 = Debug|Any CPU
+		{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}.Release - Unsafe MDCT|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}.Release - Unsafe MDCT|Any CPU.Build.0 = Release|Any CPU
+		{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BB9699-5782-4CDD-91AF-DBC14F7AA331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB315F4-E72E-4055-A443-5E2A575ED15D}.Debug - Unsafe MDCT|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB315F4-E72E-4055-A443-5E2A575ED15D}.Debug - Unsafe MDCT|Any CPU.Build.0 = Debug|Any CPU
+		{CCB315F4-E72E-4055-A443-5E2A575ED15D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB315F4-E72E-4055-A443-5E2A575ED15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB315F4-E72E-4055-A443-5E2A575ED15D}.Release - Unsafe MDCT|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB315F4-E72E-4055-A443-5E2A575ED15D}.Release - Unsafe MDCT|Any CPU.Build.0 = Release|Any CPU
+		{CCB315F4-E72E-4055-A443-5E2A575ED15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB315F4-E72E-4055-A443-5E2A575ED15D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E417EDFC-4B89-4422-8BC3-4010D4992A83}
+	EndGlobalSection
+EndGlobal
